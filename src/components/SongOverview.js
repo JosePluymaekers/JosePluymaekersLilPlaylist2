@@ -11,6 +11,7 @@ class SongOverview extends React.Component {
       artist: "",
       genre: "",
       rating: "",
+      id: Math.random(),
       songs: [],
     };
   }
@@ -34,6 +35,7 @@ class SongOverview extends React.Component {
       artist: this.state.artist,
       genre: this.state.genre,
       rating: this.state.rating,
+      id: this.state.id,
     });
 
     this.setState({
@@ -42,7 +44,15 @@ class SongOverview extends React.Component {
       artist: "",
       genre: "",
       rating: "",
+      id: "",
     });
+  };
+
+  handleDelete = (songDel) => {
+    let newSongs = this.state.songs.filter((song) => {
+      return song !== songDel;
+    });
+    this.setState({ songs: newSongs });
   };
 
   render() {
@@ -59,7 +69,7 @@ class SongOverview extends React.Component {
             playlistRating={this.state.rating}
           />
 
-          <SongList songs={this.state.songs} />
+          <SongList songs={this.state.songs} handleDelete={this.handleDelete} />
         </div>
       </main>
     );

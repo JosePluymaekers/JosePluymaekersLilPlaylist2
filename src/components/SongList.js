@@ -21,6 +21,9 @@ class SongList extends React.Component {
                 <td>{song.artist}</td>
                 <td>{song.genre}</td>
                 <td>{song.rating}</td>
+                <button onClick={this.props.handleDelete.bind(this, song)}>
+                  Delete
+                </button>
               </tr>
             );
           })}
