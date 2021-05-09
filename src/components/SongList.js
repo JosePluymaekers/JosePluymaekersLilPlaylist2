@@ -5,8 +5,8 @@ class SongList extends React.Component {
     const songs = this.props.songs;
 
     return (
-      <div id="songTable">
-        <table style={{ width: "100%", marginTop: "5em" }}>
+      <div >
+        <table className="songlist">
           <tr>
             <th>Title</th>
             <th>Artist</th>

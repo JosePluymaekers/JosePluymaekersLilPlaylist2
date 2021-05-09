@@ -33,8 +33,8 @@ class SongForm extends React.Component {
             onChange={this.props.handleChange}
           />
 
-          <label style={{ marginLeft: "20px" }}></label>
           <select
+            className="dropdown"
             id="rating"
             name="rating"
             value={this.props.playlistRating}
@@ -47,7 +47,7 @@ class SongForm extends React.Component {
             <option value="4">4</option>
             <option value="5">5</option>
           </select>
-          <button style={{ marginLeft: "20px" }} type="submit" value="Submit">
+          <button type="submit" value="Submit">
             Add To Playlist
           </button>
         </form>

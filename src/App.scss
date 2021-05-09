@@ -2,9 +2,7 @@
   padding: 0px;
   text-align: center;
   text-decoration: none;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   margin: 0px;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   background-color: cadetblue;
@@ -19,8 +17,6 @@ a {
   height: 80px;
   background-color: darkcyan;
   color: #fff;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   font-size: 30px;
   padding-top: 30px;
@@ -29,11 +25,8 @@ a {
 .songlist {
   width: "40%";
   margin: auto;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -ms-flex-line-pack: center;
-      align-content: center;
+  justify-content: center;
+  align-content: center;
 }
 
 input,
@@ -52,8 +45,7 @@ td {
 
 th {
   width: 200px;
-  -ms-flex-line-pack: center;
-      align-content: center;
+  align-content: center;
   margin-top: 20px;
 }
 
@@ -70,15 +62,9 @@ button {
 }
 
 .form {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: left;
-      -ms-flex-align: left;
-          align-items: left;
+  justify-content: center;
+  align-items: left;
 }
 
 .trashbin {
@@ -87,30 +73,21 @@ button {
 
 .navBar {
   background-color: cadetblue;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   height: 40px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
 
 li {
   list-style: none;
   display: inline;
   padding: 10px;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
 }
 
 .about {
   height: 100%;
   width: 50%;
   margin: auto;
-  -ms-flex-line-pack: center;
-      align-content: center;
+  align-content: center;
 }
-/*# sourceMappingURL=App.css.map */
